@@ -6,7 +6,7 @@ library(tidyverse)
 data <- read.csv2("prénomsDDN.csv", encoding = "utf8")
 
 
-# Afficher les 10 prénoms les plus fréquents
+#  les 10 prénoms les plus fréquents
 
 top10 <- data %>% 
   
@@ -19,6 +19,9 @@ top10 <- data %>%
   
   # garder que le top 10
   head(10)
+
+
+
 
 # Afficher le top 10 des prénoms dans un graphique
 
@@ -36,7 +39,7 @@ ggplot(top10, aes(x = reorder(Prénom, -Effectif), y = Effectif)) +
 
 
 
-# Même exercice pour les prénoms des personnes nées en 2012
+# Même exercice pour les prénoms des personnes nées après 2012
 
 top10_2012 <- data %>% 
   # ajout d'un filtre

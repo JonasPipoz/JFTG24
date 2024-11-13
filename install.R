@@ -1,3 +1,3 @@
 install.packages("tidyverse")
-install.packages('TurtleGraphic')
+install.packages('TurtleGraphics')
 
