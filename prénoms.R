@@ -5,8 +5,6 @@ library(tidyverse)
 
 data <- read.csv2("prénomsDDN.csv", encoding = "utf8")
 
-library(dplyr)
-library(ggplot2)
 
 # Afficher les 10 prénoms les plus fréquents
 
