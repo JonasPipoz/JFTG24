@@ -1,5 +1,5 @@
 
-
+library(tidyverse)
 
 # lecture des données
 
@@ -67,7 +67,3 @@ ggplot(top10_2012, aes(x = reorder(Prénom, -Effectif), y = Effectif)) +
   # x axis labels pas en puissance de 10
   scale_y_continuous(labels = scales::comma) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-
-
-#
